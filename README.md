@@ -1,1 +1,1 @@
-# StudyGroup-MP-Motionlab
+Mobile Innovation Lab studying Journey.
