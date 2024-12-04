@@ -388,7 +388,7 @@ class ProductDetail extends StatelessWidget {
                       ),
                     ),
                     child: const Text(
-                      'Add to bag',
+                      'Add to bag test',
                       style: TextStyle(fontSize: 17, color: Colors.white),
                     ),
                   ),
