@@ -1,5 +1,7 @@
 rangkuman study group week 2:
 
+notes: "tulis 'stl' buat stateless widget instant"
+
 important:
 "setiap menulis line direkomendasikan untuk menambahkan , (koma.)"
 
