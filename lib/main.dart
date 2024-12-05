@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:w2_slicing_ui/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
       ),
-      home: const HomeScreen(),
+      home: const LoginPage(),
     );
   }
 }
