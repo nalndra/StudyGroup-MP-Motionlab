@@ -6,12 +6,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                 hintStyle: const TextStyle(color: Color(0xFF868A91)),
                 prefixIcon: const Icon(
                   Icons.search,
-                  color: const Color(0xFF868A91),
+                  color: Color(0xFF868A91),
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(73),
@@ -109,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF2F2F2),
+                      color: const Color(0xFFF2F2F2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text("Watch"),
@@ -121,7 +121,7 @@ class HomeScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF2F2F2),
+                      color: const Color(0xFFF2F2F2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text("Shirt"),
@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF2F2F2),
+                      color: const Color(0xFFF2F2F2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text("Shoes"),
@@ -187,7 +187,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xFF00623B),
+        backgroundColor: const Color(0xFF00623B),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
@@ -210,11 +210,11 @@ class ProductImg extends StatelessWidget {
   final double price;
 
   const ProductImg({
-    Key? key,
+    super.key,
     required this.image,
     required this.name,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -241,10 +241,9 @@ class ProductImg extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
-                  borderRadius:
-                      const BorderRadius.vertical(top: Radius.circular(12)),
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
                 ),
                 child: Center(
                   child: Image.asset(
@@ -270,7 +269,7 @@ class ProductImg extends StatelessWidget {
                     children: [
                       Text(
                         "\$${price.toStringAsFixed(2)}",
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF00623B),
                           fontWeight: FontWeight.bold,
                         ),
@@ -300,11 +299,11 @@ class ProductDetail extends StatelessWidget {
   final double price;
 
   const ProductDetail({
-    Key? key,
+    super.key,
     required this.image,
     required this.name,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -363,7 +362,7 @@ class ProductDetail extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(
                   '\$${price.toStringAsFixed(2)}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20,
                     color: Color(0xFF00623B),
                   ),
@@ -382,14 +381,14 @@ class ProductDetail extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFF00623B),
+                      backgroundColor: const Color(0xFF00623B),
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
                     child: const Text(
-                      'Add to bag test',
+                      'Add to cart',
                       style: TextStyle(fontSize: 17, color: Colors.white),
                     ),
                   ),
