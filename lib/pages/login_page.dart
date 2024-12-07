@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:w2_slicing_ui/pages/login_button.dart';
+import 'package:w2_slicing_ui/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -80,49 +82,37 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 24),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 23.0, vertical: 20),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF00623B),
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 16, horizontal: 30),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+            const ButtonLogin(),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RegisterPage(),
+                  ),
+                );
+              },
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: GoogleFonts.roboto().fontFamily,
+                    color: Colors.black,
+                  ),
+                  children: const [
+                    TextSpan(
+                      text: "Don't have an account? ",
                     ),
-                  ),
-                  child: const Text(
-                    'Login',
-                    style: TextStyle(fontSize: 17, color: Colors.white),
-                  ),
+                    TextSpan(
+                      text: "Register",
+                      style: TextStyle(
+                        color: Colors.green,
+                        decoration: TextDecoration.underline,
+                      ),
+                    )
+                  ],
                 ),
-              ),
-            ),
-            RichText(
-              text: TextSpan(
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: GoogleFonts.roboto().fontFamily,
-                  color: Colors.black, // Default color for the first part
-                ),
-                children: const [
-                  TextSpan(
-                    text: "Don't have an account? ",
-                  ),
-                  TextSpan(
-                    text: "Register",
-                    style: TextStyle(
-                      color: Colors.green,
-                      decoration: TextDecoration.underline,
-                    ),
-                  )
-                ],
               ),
             ),
           ],
