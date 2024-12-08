@@ -72,7 +72,7 @@ class LoginPage extends StatelessWidget {
                   hintText: "Password",
                   hintStyle: const TextStyle(color: Color(0xFF868A91)),
                   prefixIcon: const Icon(
-                    Icons.key,
+                    Icons.lock,
                     color: Color(0xFF868A91),
                   ),
                   border: OutlineInputBorder(
