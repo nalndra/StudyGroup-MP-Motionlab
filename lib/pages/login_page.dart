@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:w2_slicing_ui/pages/login_button.dart';
 import 'package:w2_slicing_ui/pages/register_page.dart';
 
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -18,24 +19,27 @@ class LoginPage extends StatelessWidget {
               height: 60,
             ),
             LottieBuilder.asset(
-              "assets/lottie_login.json",
+              "assets/login2.json",
               width: 280,
+            ),
+            const SizedBox(
+              height: 2,
             ),
             const SizedBox(height: 2),
             Text(
               "Welcome!",
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 23,
                 fontWeight: FontWeight.bold,
-                fontFamily: GoogleFonts.roboto().fontFamily,
+                fontFamily: GoogleFonts.oswald().fontFamily,
               ),
             ),
             Text(
               "Happy Shopping All",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 17,
                 color: const Color(0xFF707070),
-                fontFamily: GoogleFonts.roboto().fontFamily,
+                fontFamily: GoogleFonts.lato().fontFamily,
               ),
             ),
             const Padding(
@@ -46,7 +50,7 @@ class LoginPage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color.fromARGB(255, 246, 246, 246),
+                  fillColor: Colors.white,
                   hintText: "Email",
                   hintStyle: const TextStyle(color: Color(0xFF868A91)),
                   prefixIcon: const Icon(
@@ -55,7 +59,17 @@ class LoginPage extends StatelessWidget {
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
-                    borderSide: BorderSide.none,
+                    borderSide: const BorderSide(
+                      color: Color(0xFF3A5A40),
+                      width: 1,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: const BorderSide(
+                      color: Colors.green,
+                      width: 2,
+                    ),
                   ),
                 ),
               ),
@@ -68,7 +82,7 @@ class LoginPage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color.fromARGB(255, 246, 246, 246),
+                  fillColor: Colors.white,
                   hintText: "Password",
                   hintStyle: const TextStyle(color: Color(0xFF868A91)),
                   prefixIcon: const Icon(
@@ -77,7 +91,17 @@ class LoginPage extends StatelessWidget {
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
-                    borderSide: BorderSide.none,
+                    borderSide: const BorderSide(
+                      color: Color(0xFF3A5A40),
+                      width: 1,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: const BorderSide(
+                      color: Colors.green,
+                      width: 2,
+                    ),
                   ),
                 ),
               ),
