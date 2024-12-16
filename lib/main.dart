@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:w2_slicing_ui/pages/cart.dart';
 
 import 'package:w2_slicing_ui/pages/splash_screen.dart';
 
@@ -32,17 +33,26 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: const Color(0xFFFCFFFE),
         elevation: 0,
         leading: IconButton(
-          icon: Image.asset('assets/bars.png', width: 20, height: 20),
+          icon: Image.asset('assets/misc/bars.png', width: 20, height: 20),
           onPressed: () {},
         ),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Image.asset('assets/logo.png', width: 47, height: 47)],
+          children: [
+            Image.asset('assets/misc/logo.png', width: 47, height: 47)
+          ],
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/bag.png', width: 23, height: 23),
-            onPressed: () {},
+            icon: Image.asset('assets/misc/bag.png', width: 23, height: 23),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const cartPage(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -163,22 +173,22 @@ class HomeScreen extends StatelessWidget {
               crossAxisSpacing: 16,
               children: const [
                 ProductImg(
-                  image: 'assets/miBand8.png',
+                  image: 'assets/images/miBand8.png',
                   name: 'Mi Band 8 Pro',
                   price: 54.00,
                 ),
                 ProductImg(
-                  image: 'assets/lycraMen.png',
+                  image: 'assets/images/lycraMen.png',
                   name: "Lycra Men's Shirt",
                   price: 12.00,
                 ),
                 ProductImg(
-                  image: 'assets/siberia800.png',
+                  image: 'assets/images/siberia800.png',
                   name: 'Siberia 800',
                   price: 45.00,
                 ),
                 ProductImg(
-                  image: 'assets/strawberryFrapuccino.png',
+                  image: 'assets/images/strawberryFrapuccino.png',
                   name: 'Strawberry Frapuccino',
                   price: 35.00,
                 ),

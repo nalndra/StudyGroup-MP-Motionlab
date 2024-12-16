@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:w2_slicing_ui/pages/login_button.dart';
 import 'package:w2_slicing_ui/pages/register_page.dart';
 
-
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -19,7 +18,7 @@ class LoginPage extends StatelessWidget {
               height: 60,
             ),
             LottieBuilder.asset(
-              "assets/login2.json",
+              "assets/animations/login2.json",
               width: 280,
             ),
             const SizedBox(

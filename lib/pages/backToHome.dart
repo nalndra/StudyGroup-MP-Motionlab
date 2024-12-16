@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:w2_slicing_ui/pages/login_page.dart';
+import 'package:w2_slicing_ui/main.dart';
 
-class RegisterButton extends StatelessWidget {
-  const RegisterButton({super.key});
+class Backtohome extends StatelessWidget {
+  const Backtohome({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class RegisterButton extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const LoginPage(),
+                builder: (context) => const HomeScreen(),
               ),
             );
           },
@@ -27,7 +27,7 @@ class RegisterButton extends StatelessWidget {
             ),
           ),
           child: const Text(
-            'Register',
+            'Back To Home',
             style: TextStyle(fontSize: 17, color: Colors.white),
           ),
         ),
