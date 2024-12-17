@@ -204,11 +204,9 @@ class HomeScreen extends StatelessWidget {
         unselectedItemColor: Colors.white,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_balance_wallet_rounded), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: ''),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications_none), label: ''),
+              icon: Icon(Icons.person_outline_rounded), label: ''),
         ],
       ),
     );

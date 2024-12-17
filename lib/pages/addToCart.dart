@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:w2_slicing_ui/pages/Payment_page.dart';
 
+// ignore: camel_case_types
 class cartAdd extends StatelessWidget {
   const cartAdd({super.key});
 

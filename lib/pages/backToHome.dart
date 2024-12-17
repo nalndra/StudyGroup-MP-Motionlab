@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:w2_slicing_ui/main.dart';
 
@@ -27,7 +28,7 @@ class Backtohome extends StatelessWidget {
             ),
           ),
           child: const Text(
-            'Back To Home',
+            'Back to Home',
             style: TextStyle(fontSize: 17, color: Colors.white),
           ),
         ),
