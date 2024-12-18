@@ -108,10 +108,12 @@ class HomeScreen extends StatelessWidget {
                       color: const Color(0xFF3A5A40),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: const Text("All",
-                        style: TextStyle(
-                          color: Colors.white,
-                        )),
+                    child: const Text(
+                      "All",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
@@ -148,6 +150,18 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text("Shoes"),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF2F2F2),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Text("Food"),
                   ),
                 ),
               ],

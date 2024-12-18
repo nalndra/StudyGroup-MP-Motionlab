@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:w2_slicing_ui/controller/cart_controller.dart';
-import 'package:w2_slicing_ui/pages/addToCart.dart';
+import 'package:w2_slicing_ui/pages/add_to_cart.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: camel_case_types
@@ -59,8 +59,8 @@ class cartPage extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.2),
-                            spreadRadius: 2,
-                            blurRadius: 5,
+                            spreadRadius: 1,
+                            blurRadius: 1,
                             offset: const Offset(0, 0),
                           ),
                         ],
@@ -89,7 +89,7 @@ class cartPage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  '\$54.99',
+                                  '\$54.00',
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Colors.green,
@@ -98,22 +98,34 @@ class cartPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Container(
-                                child: IconButton(
-                                  icon: const Icon(Icons.remove),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: const Color(0xFF00623B),
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Row(
+                              children: [
+                                IconButton(
+                                  icon: const Icon(
+                                    Icons.remove,
+                                    color: Colors.green,
+                                  ),
                                   onPressed: cartController.quantityDecrement,
                                 ),
-                              ),
-                              Obx(() =>
-                                  Text('${cartController.quantity.value}')),
-                              IconButton(
-                                icon: const Icon(Icons.add),
-                                onPressed: cartController.quantityIncrement,
-                              ),
-                            ],
+                                Obx(() =>
+                                    Text('${cartController.quantity.value}')),
+                                IconButton(
+                                  icon: const Icon(
+                                    Icons.add,
+                                    color: Colors.green,
+                                  ),
+                                  onPressed: cartController.quantityIncrement,
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
@@ -130,8 +142,8 @@ class cartPage extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.2),
-                            spreadRadius: 2,
-                            blurRadius: 5,
+                            spreadRadius: 1,
+                            blurRadius: 1,
                             offset: const Offset(0, 0),
                           ),
                         ],
@@ -169,20 +181,34 @@ class cartPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              IconButton(
-                                icon: const Icon(Icons.remove),
-                                onPressed: cartController.quantityDecrement,
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: const Color(0xFF00623B),
+                                width: 1,
                               ),
-                              Obx(() =>
-                                  Text('${cartController.quantity.value}')),
-                              IconButton(
-                                icon: const Icon(Icons.add),
-                                onPressed: cartController.quantityIncrement,
-                              ),
-                            ],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Row(
+                              children: [
+                                IconButton(
+                                  icon: const Icon(
+                                    Icons.remove,
+                                    color: Colors.green,
+                                  ),
+                                  onPressed: cartController.quantityDecrement,
+                                ),
+                                Obx(() =>
+                                    Text('${cartController.quantity.value}')),
+                                IconButton(
+                                  icon: const Icon(
+                                    Icons.add,
+                                    color: Colors.green,
+                                  ),
+                                  onPressed: cartController.quantityIncrement,
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),

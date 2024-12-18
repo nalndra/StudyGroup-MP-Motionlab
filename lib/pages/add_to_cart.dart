@@ -1,9 +1,9 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:w2_slicing_ui/main.dart';
+import 'package:w2_slicing_ui/pages/Payment_page.dart';
 
-class Backtohome extends StatelessWidget {
-  const Backtohome({super.key});
+// ignore: camel_case_types
+class cartAdd extends StatelessWidget {
+  const cartAdd({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class Backtohome extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const HomeScreen(),
+                builder: (context) => const PaymentPage(),
               ),
             );
           },
@@ -28,7 +28,7 @@ class Backtohome extends StatelessWidget {
             ),
           ),
           child: const Text(
-            'Back to Home',
+            'Buy Now',
             style: TextStyle(fontSize: 17, color: Colors.white),
           ),
         ),
