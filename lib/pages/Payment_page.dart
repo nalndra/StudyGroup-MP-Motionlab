@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:w2_slicing_ui/pages/back_home_button.dart';
+import 'package:w2_slicing_ui/widgets/back_home_button.dart';
 
 class PaymentPage extends StatelessWidget {
   const PaymentPage({super.key});

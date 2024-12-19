@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:w2_slicing_ui/pages/login_button.dart';
+import 'package:w2_slicing_ui/widgets/login_button.dart';
 import 'package:w2_slicing_ui/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {

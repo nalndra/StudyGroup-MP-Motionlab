@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:w2_slicing_ui/controller/cart_controller.dart';
-import 'package:w2_slicing_ui/pages/add_to_cart.dart';
+import 'package:w2_slicing_ui/widgets/add_to_cart.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: camel_case_types
