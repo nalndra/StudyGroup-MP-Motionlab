@@ -15,11 +15,11 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             LottieBuilder.asset("assets/lottie_login.json"),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text("Welcome!"),
-            Text("Happy Shopping All"),
+            const Text("Welcome!"),
+            const Text("Happy Shopping All"),
           ],
         ),
       ),
