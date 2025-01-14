@@ -1,13 +1,4 @@
-# Rangkuman Seputar GetCLI:
-
-`GetCLI` adalah alat baris perintah (Command Line Interface) yang disediakan oleh **GetX** untuk mempermudah dan mempercepat pengembangan aplikasi Flutter. Dengan `GetCLI`, pengembang dapat mengotomatisasi banyak tugas rutin, seperti pembuatan struktur aplikasi dan komponen-komponen penting, sehingga lebih fokus pada pengembangan fitur aplikasi.
-
-## Fitur Utama GetCLI
-
-### 1. **Membuat Struktur Aplikasi Otomatis**
-   `GetCLI` memungkinkan pembuatan proyek Flutter dengan struktur aplikasi yang sudah rapi dan siap pakai hanya dengan satu perintah:
-   ```bash
-   get create project <nama_project>
+# Rangkuman GetCLI
 
 **GetCLI** adalah alat baris perintah (CLI) yang disediakan oleh framework GetX di Flutter. Fungsinya adalah untuk mempercepat dan menyederhanakan pembuatan aplikasi Flutter dengan menghasilkan file dan struktur kode yang telah siap pakai.
 
@@ -22,4 +13,4 @@
 - Buat aplikasi baru dengan `get create project <nama_project>`.
 - Untuk membuat Controller, gunakan `get create controller <nama_controller>`.
 
-GetCLI membantu menghemat waktu pengembangan dengan menyediakan template otomatis untuk berbagai bagian aplikasi.
+
