@@ -1,4 +1,4 @@
-# GetCLI: Mempermudah Pengembangan Aplikasi dengan GetX
+# Rangkuman Seputar GetCLI:
 
 `GetCLI` adalah alat baris perintah (Command Line Interface) yang disediakan oleh **GetX** untuk mempermudah dan mempercepat pengembangan aplikasi Flutter. Dengan `GetCLI`, pengembang dapat mengotomatisasi banyak tugas rutin, seperti pembuatan struktur aplikasi dan komponen-komponen penting, sehingga lebih fokus pada pengembangan fitur aplikasi.
 
