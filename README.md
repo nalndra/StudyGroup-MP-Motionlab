@@ -1,7 +1,7 @@
 # Dasar API
 
 ## API
-API: Application Programming Interface
+API: Application Programming Interface.
 Cara agar berkomunikasi antara client dan server.
 
 ## Rute
