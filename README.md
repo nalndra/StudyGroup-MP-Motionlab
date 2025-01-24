@@ -35,7 +35,7 @@ Ketika program ini dijalankan maka akan memiliki output:
 ```
 Memesan pizza
 ```
-Lalu, 3 detik kemudian akan ada output baru yaitu
+Lalu, 3 detik kemudian akan ada output baru yaitu:
 ```
 Pizza datang
 ```
