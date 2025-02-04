@@ -1,4 +1,4 @@
-# Dasar Local Storage di Flutter
+# Local Storage
 
 Local storage adalah metode penyimpanan data secara lokal di perangkat pengguna. Dalam Flutter, ada beberapa cara untuk menyimpan data secara lokal, di antaranya:
 
