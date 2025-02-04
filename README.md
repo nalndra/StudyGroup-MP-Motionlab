@@ -2,8 +2,8 @@
 
 Local storage adalah metode penyimpanan data secara lokal di perangkat pengguna. Dalam Flutter, ada beberapa cara untuk menyimpan data secara lokal, di antaranya:
 
-## 1. SharedPreferences
-SharedPreferences adalah cara yang paling sederhana untuk menyimpan data dalam bentuk pasangan kunci-nilai. Cocok untuk menyimpan data sederhana seperti pengaturan aplikasi atau preferensi pengguna.
+## 1. Shared Preferences
+Shared Preferences adalah cara yang paling sederhana untuk menyimpan data dalam bentuk pasangan kunci-nilai. Cocok untuk menyimpan data sederhana seperti pengaturan aplikasi atau preferensi pengguna.
 
 ### Contoh Penggunaan:
 ```dart
@@ -63,4 +63,4 @@ void loadData() async {
 
 ## Kesimpulan:
 
-metode penyimpanan lokal/locak storage Shared Preference  untuk kebutuhan data yang ringan, Hive untuk pengelolaan data yang lebih kompleks, dan SQLite untuk struktur data yang lebih terorganisir.
+metode penyimpanan lokal/local storage **Shared Preference** untuk kebutuhan data yang ringan, **Hive** untuk pengelolaan data yang lebih kompleks, dan **SQLite** untuk struktur data yang lebih terorganisir.
