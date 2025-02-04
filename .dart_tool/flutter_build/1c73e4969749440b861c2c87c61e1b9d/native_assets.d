@@ -1,0 +1,1 @@
+ C:\\Motion\\MP-flutter\\week2_flutterSG\\w2_tugas\\.dart_tool\\flutter_build\\1c73e4969749440b861c2c87c61e1b9d\\native_assets.yaml: 
